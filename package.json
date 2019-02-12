@@ -1,0 +1,20 @@
+{
+  "name": "ItemFeatures",
+  "version": "1.0.0",
+  "description": "This service provides the Item Features drop down list information for a specified item. The specified item is defined by it's associated itemID.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanCMeyer/ItemFeatures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanCMeyer/ItemFeatures/issues"
+  },
+  "homepage": "https://github.com/SeanCMeyer/ItemFeatures#readme"
+}
