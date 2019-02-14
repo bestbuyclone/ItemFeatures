@@ -1,7 +1,7 @@
 {
-  "name": "ItemTitle",
+  "name": "features",
   "version": "1.0.0",
-  "description": "This service provides the Title bar information for a specified item. The specified item is defined by it's associated itemID.",
+  "description": "This service provides the Item Features drop down list information for a specified item",
   "main": "index.js",
   "scripts": {
     "server": "nodemon ./server/server.js",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SeanCMeyer/React-Webpack-Babel-Boilerplate.git"
+    "url": "git+https://github.com/SeanCMeyer/ItemFeatures.git"
   },
   "keywords": [],
   "author": "Sean Meyer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SeanCMeyer/React-Webpack-Babel-Boilerplate.git/issues"
+    "url": "https://github.com/SeanCMeyer/ItemFeatures.git/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
