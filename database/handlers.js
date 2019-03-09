@@ -13,8 +13,8 @@ const batchInsert = data => {
     .catch(err => console.error(err));
 };
 
-const getItemFeature = (id, cb) => {
+const getItemFeatures = (id, cb) => {
   ItemFeature.findOne({ featureId: id }).exec(cb);
 };
 
-module.exports = { batchInsert, getItemFeature };
+module.exports = { batchInsert, getItemFeatures };
