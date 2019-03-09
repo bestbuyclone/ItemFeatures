@@ -6,6 +6,6 @@ const { batchInsert } = require("./handlers");
 
 db(`mongodb://${DBURI}:${DBPORT}/${DBNAME}`);
 
-const dataList = batchData(3000);
+const dataList = batchData(1000);
 
 batchInsert(dataList);

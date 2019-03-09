@@ -14,7 +14,7 @@ const batchInsert = data => {
 };
 
 const getItemFeature = (id, cb) => {
-  ItemFeature.find({ featureId: id }).exec(cb);
+  ItemFeature.findOne({ featureId: id }).exec(cb);
 };
 
 module.exports = { batchInsert, getItemFeature };
