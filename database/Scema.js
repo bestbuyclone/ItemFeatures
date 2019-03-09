@@ -3,8 +3,7 @@ const Schema = mongoose.Schema;
 
 const featureSchema = new Schema({
   featureId: Number,
-  feature: String,
-  featureDescription: String
+  featuresList: String
 });
 
 const ItemFeature = mongoose.model("ItemFeature", featureSchema);
