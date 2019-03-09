@@ -1,13 +1,12 @@
 const faker = require("faker");
-faker.seed(1337);
+faker.seed(31337);
 
 const createFakeItem = id => ({
   titleId: id,
-  title: (() => {
-    return `${faker.commerce.productName()} / ${faker.commerce.department()} / ${faker.commerce.productAdjective()} / ${faker.commerce.productMaterial()}`;
-  })(),
-  model: faker.finance.bitcoinAddress(),
-  sku: faker.random.number()
+  feature: faker.company.catchPhrase(),
+  featureDescription: (() => {
+    return `${faker.hacker.phrase()} ${faker.hacker.phrase()}`;
+  })()
 });
 
 const batchData = num => {
@@ -15,7 +14,6 @@ const batchData = num => {
   for (i = 1; i < num + 1; i++) {
     results.push(createFakeItem(i));
   }
-  console.log(results);
   return results;
 };
 

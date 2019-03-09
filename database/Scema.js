@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const titleSchema = new Schema({
-  titleId: Number,
-  title: String,
-  model: String,
-  sku: Number
+const featureSchema = new Schema({
+  featureId: Number,
+  feature: String,
+  featureDescription: String
 });
 
-const ItemTitle = mongoose.model("ItemTitle", titleSchema);
+const ItemFeature = mongoose.model("ItemFeature", featureSchema);
 
-module.exports = { ItemTitle };
+module.exports = { ItemFeature };
