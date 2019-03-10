@@ -24,6 +24,7 @@ const batchData = num => {
   for (i = 1; i < num + 1; i++) {
     results.push(createFakeItem(i));
   }
+  console.log("we here", results);
   return results;
 };
 
