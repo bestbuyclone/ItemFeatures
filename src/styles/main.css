@@ -1,3 +1,62 @@
 body {
-  line-height: 10;
+  font-size: 13px;
+  line-height: normal;
+  color: #040c13;
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+div {
+  box-sizing: border-box;
+  display: block;
+}
+
+hr {
+  border-width: 1px;
+  border-color: #c5cbd5;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #c5cbd5;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.wrapper {
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.feature-name {
+  box-sizing: border-box;
+  padding-top: 0;
+  margin: 0;
+  padding: 11px 0 6px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: normal;
+  display: block;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.feature-description-p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 9px;
+  display: block;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
 }
