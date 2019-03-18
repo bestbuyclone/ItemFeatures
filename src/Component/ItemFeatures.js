@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import FeatureList from "./FeatureList.jsx";
+import FeatureList from "./FeatureList";
 
 export default class ItemFeatures extends Component {
   constructor() {
@@ -23,8 +23,7 @@ export default class ItemFeatures extends Component {
     this.handleItemChange(currentItemId);
   }
 
-  handleItemChange() {
-    const itemId = Math.floor(Math.random() * (1000 - 1 + 1)) + 1;
+  handleItemChange(itemId) {
     axios
       .get(`http://localhost:5002/api/features/${itemId}`)
       .then(response => {
@@ -33,9 +32,8 @@ export default class ItemFeatures extends Component {
           currentItemId: featureId,
           featuresArray: featuresList
         });
-        console.log("currentstate", this.state);
       })
-      .catch(err => console.error(err));
+      .catch(console.error);
   }
 
   render() {
@@ -48,7 +46,6 @@ export default class ItemFeatures extends Component {
         <h3 className={"heading"}>Features</h3>
         <hr role={"seperation"} />
         <div>{features}</div>
-        <button onClick={this.handleItemChange}>I work?</button>
       </div>
     );
   }
